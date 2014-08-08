@@ -41,3 +41,8 @@ iframe .c3{
 .off-canvas-list li.active a{
     background-color: #242424;
 }
+.tab-bar-section.middle {
+    overflow: hidden;
+    text-align: center;
+    padding: 0;
+}
