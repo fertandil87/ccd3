@@ -27,7 +27,7 @@
                     </section>
 
                     <section class="middle tab-bar-section">
-                        <h1 class="title">Copa Cosa de Serranos 2</h1>
+                        <img ng-src="img/logo_{{lugar}}.png" alt="Copa Cosa de Serranos" />
                     </section>
 
                     <section class="right-small">
@@ -39,9 +39,9 @@
                 <aside class="left-off-canvas-menu">
                     <ul class="off-canvas-list">
                         <li><label>Competencia</label></li>
-                        <li><a href="#/serranostandil/principal/posiciones">Copa de Serranos Tandil</a></li>
-                        <li><a href="#/serranastandil/principal/posiciones">Copa de Serranas Tandil</a></li>
-                        <li><a href="#">Copa de Serranos Junin</a></li>
+                        <li ng-class="{active: lugar === 'serranostandil'}"><a href="#/serranostandil/principal/horarios">Copa de Serranos Tandil</a></li>
+                        <li ng-class="{active: lugar === 'serranastandil'}"><a href="#/serranastandil/principal/horarios">Copa de Serranas Tandil</a></li>
+                        <li ng-class="{active: lugar === 'serranosjunin'}"><a href="#/serranosjunin/principal/horarios">Copa de Serranos Junín</a></li>
                     </ul>
                 </aside>
                 <aside class="right-off-canvas-menu">
@@ -63,15 +63,11 @@
                 </aside>
                 <section class="main-section">
                     <div class="banner">
-                        <a href="#" onclick="window.open('http://www.cosadeserranos.com.ar', '_system');">
-                            <img src="img/banner.gif" alt="Banner top"/>
-                        </a>
+                        <script type="text/javascript" src="http://ad.leadboltads.net/show_app_ad.js?section_id=216274349"></script>
                     </div>
                     <div ng-style="{'height':iframeHeight}" ng-view></div>
                     <div class="banner">
-                        <a href="http://www.cosadeserranos.com.ar" target="_blank">
-                            <img src="img/banner2.png" alt="Banner footer"/>
-                        </a>
+                        <script type="text/javascript" src="http://ad.leadboltads.net/show_app_ad.js?section_id=282445194"></script>
                     </div>
                 </section>
                 <a class="exit-off-canvas"></a>

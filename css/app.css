@@ -35,4 +35,9 @@ iframe .c3{
 .banner{
     background: #fefefe;
     text-align: center;
+    height: 50px;
+    overflow: hidden;
+}
+.off-canvas-list li.active a{
+    background-color: #242424;
 }

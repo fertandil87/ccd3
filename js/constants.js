@@ -9,16 +9,16 @@ angular.module('myApp')
         serranostandil_cronicas_boca: "https://docs.google.com/document/d/1AUOurFOMpgyWlsYshnCoflM_4AeB1kUAzssDNLAC6ek/pub?embedded=true",
         serranostandil_cronicas_independiente: "https://docs.google.com/document/d/1pJuoPUzN4ZYLwH2qP5Lrbkc_-ys5WAa59-10eGe3IeM/pub?embedded=true",
         serranostandil_cronicas_rivadavia: "https://docs.google.com/document/d/12SkwgXUtcVde3U8p4NFf5WQRwDQWkh9z8iPhjjWquwo/pub?embedded=true",
-        serranastandil_principal_horarios: "https://docs.google.com/document/d/1kAlfGfJ8tpv8wW7aSbepDm6epr2ShA5zrSEjuUuBwsE/pub?embedded=true",
-        serranastandil_principal_posiciones: "https://docs.google.com/document/d/1MB8EFt7Okp-NXFbOyk1F-mObDcZCOajuqgX97QSQsUY/pub?embedded=true",
-        serranastandil_principal_amolestados: "https://docs.google.com/document/d/1MdZPf9taA2GEpAFNv8vHiI24DlZxUYLaQJ3Sf9MmKBA/pub?embedded=true",
-        serranastandil_principal_resultados: "https://docs.google.com/document/d/1e_o1QfLP-9IgAj2O1HjDjygIwDjDm3Ht_zSyqPzfPKk/pub?embedded=true",
-        serranastandil_cronicas_todas: "https://docs.google.com/document/d/1djp1wVgEvSr542M5HzqZmBu3_0vu36NoFgIvRD5E-70/pub?embedded=true",
-        serranosjunin_principal_horarios: "https://docs.google.com/document/d/1kAlfGfJ8tpv8wW7aSbepDm6epr2ShA5zrSEjuUuBwsE/pub?embedded=true",
-        serranosjunin_principal_posiciones: "https://docs.google.com/document/d/1MB8EFt7Okp-NXFbOyk1F-mObDcZCOajuqgX97QSQsUY/pub?embedded=true",
-        serranosjunin_principal_amolestados: "https://docs.google.com/document/d/1MdZPf9taA2GEpAFNv8vHiI24DlZxUYLaQJ3Sf9MmKBA/pub?embedded=true",
-        serranosjunin_principal_resultados: "https://docs.google.com/document/d/1e_o1QfLP-9IgAj2O1HjDjygIwDjDm3Ht_zSyqPzfPKk/pub?embedded=true",
-        serranosjunin_cronicas_todas: "https://docs.google.com/document/d/1djp1wVgEvSr542M5HzqZmBu3_0vu36NoFgIvRD5E-70/pub?embedded=true",
+        serranastandil_principal_horarios: "https://docs.google.com/document/d/1Uanq9dSKooFBT3oZWr8mNzl3yAYbfZ7rqwQfEPCYlt8/pub?embedded=true",
+        serranastandil_principal_posiciones: "https://docs.google.com/document/d/16-3hAjy2m56foDZwpJyruGuXneBrs0JdpqEzNzydhMs/pub?embedded=true",
+        serranastandil_principal_amolestados: "https://docs.google.com/document/d/1YJ4kRegk5K6U8wEhSywmDA947Kpw2zZ-XS_0tOgW44c/pub?embedded=true",
+        serranastandil_principal_resultados: "https://docs.google.com/document/d/156KVTatObmHK_CGCtVI891IDU8QpwEUXpBUpdYKUQf4/pub?embedded=true",
+        serranastandil_cronicas_todas: "https://docs.google.com/document/d/1G0v0byMiadiYJCyrEwfA1W-dtM20iY3SXwEAg93JqzE/pub?embedded=true",
+        serranosjunin_principal_horarios: "https://docs.google.com/document/d/1CeF2iL_ZbD37uprj5jDICTIlByoYxQaJJ3X9wsYa_nc/pub?embedded=true",
+        serranosjunin_principal_posiciones: "https://docs.google.com/document/d/1g3P26f5zTFRAYTdXlKjVy60cAAxn0gqb41hcykN42yY/pub?embedded=true",
+        serranosjunin_principal_amolestados: "https://docs.google.com/document/d/1ypFkLDoy5eQBxKYxzHIpGBm7cg_2gqQtNUJ2Q1hzq6M/pub?embedded=true",
+        serranosjunin_principal_resultados: "https://docs.google.com/document/d/1_goXoKPsEBGi2tPf9chgmnHcHOTdJpOlm_LWsNwnKCw/pub?embedded=true",
+        serranosjunin_cronicas_todas: "https://docs.google.com/document/d/1UnHv6DvounSRV1tKpOPSFVKbUP3evkGUwivalAMg-FI/pub?embedded=true"
     })
     .constant('MENU', {
         serranostandil: {
@@ -31,7 +31,7 @@ angular.module('myApp')
                         titulo: "Posiciones",
                         link: "#/serranostandil/principal/posiciones",
                     }, {
-                        titulo: "Amolestados",
+                        titulo: "Amarillas y Suspendidos",
                         link: "#/serranostandil/principal/amolestados",
                     }, {
                         titulo: "Resultados",
@@ -68,7 +68,7 @@ angular.module('myApp')
                         titulo: "Posiciones",
                         link: "#/serranastandil/principal/posiciones",
                     }, {
-                        titulo: "Amolestados",
+                        titulo: "Amarillas y Suspendidos",
                         link: "#/serranastandil/principal/amolestados",
                     }, {
                         titulo: "Resultados",
@@ -80,6 +80,31 @@ angular.module('myApp')
                 secciones: [{
                         titulo: "Todas las Conicas",
                         link: "#/serranastandil/cronicas/todas",
+                    }]
+            }
+        },
+        serranosjunin: {
+            principal: {
+                titulo: "Datos Principales",
+                secciones: [{
+                        titulo: "Horarios",
+                        link: "#/serranosjunin/principal/horarios",
+                    }, {
+                        titulo: "Posiciones",
+                        link: "#/serranosjunin/principal/posiciones",
+                    }, {
+                        titulo: "Amarillas y Suspendidos",
+                        link: "#/serranosjunin/principal/amolestados",
+                    }, {
+                        titulo: "Resultados",
+                        link: "#/serranosjunin/principal/horarios",
+                    }]
+            },
+            cronicas: {
+                titulo: "Cronicas",
+                secciones: [{
+                        titulo: "Todas las Conicas",
+                        link: "#/serranosjunin/cronicas/todas",
                     }]
             }
         }
