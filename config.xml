@@ -19,7 +19,7 @@
     <preference name="phonegap-version" value="2.9.0" />          <!-- all: current version of PhoneGap -->
    
    
-    <icon src="img/icon.jpg" />
+    <icon src="img/icon.png" />
     <!-- Plugins -->
 
     <!-- Core plugins -->
