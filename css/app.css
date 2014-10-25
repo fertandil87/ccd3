@@ -38,6 +38,15 @@ iframe .c3{
     height: 50px;
     overflow: hidden;
 }
+.refresh{
+    background: #fefefe;
+    text-align: center;
+    height: 42px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-decoration: underline;
+    overflow: hidden;
+}
 .off-canvas-list li.active a{
     background-color: #242424;
 }

@@ -3,11 +3,11 @@
 /* Controllers */
 
 angular.module('myApp.controllers', [])
-    .controller('MainCtrl', ['$scope', '$routeParams', 'MENU',
-        function($scope, $routeParams, MENU) {
+    .controller('MainCtrl', ['$scope', '$routeParams', 'MENU', '$route',
+        function($scope, $routeParams, MENU, $route) {
             $scope.navHeight = 45;
-            $scope.bannerTop = 50;
-            $scope.bannerBottom = 50;
+            $scope.bannerTop = 0;
+            $scope.bannerBottom = 43;
             $scope.getSizes = function() {
                 var myWidth = 0, myHeight = 0;
                 if (typeof (window.innerWidth) === 'number') {
@@ -25,7 +25,7 @@ angular.module('myApp.controllers', [])
                 }
                 $scope.width = myWidth;
                 $scope.height = myHeight;
-            }
+            };
             $scope.getSizes();
             var clearHeight = $scope.height - $scope.navHeight - $scope.bannerTop - $scope.bannerBottom;
             $scope.iframeHeight = clearHeight+'px';
@@ -36,12 +36,15 @@ angular.module('myApp.controllers', [])
             $scope.menu = MENU;
             $scope.selectedMenu = $scope.menu['serranostandil'];
             $scope.$on('$routeChangeSuccess', function (event, current, previous) {
-                console.log($routeParams);
                 $scope.lugar = $routeParams.lugar;
                 $scope.selectedMenu = $scope.menu[$scope.lugar];
                  // current is the current route
                  // previous is the previous route
              });
+             
+            $scope.reloadRoute = function() {
+                $route.reload();
+            };
         }
     ])
     .controller('DocumentosCtrl', ['$scope', '$routeParams', '$sce', 'DOCUMENTOS',

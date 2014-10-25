@@ -97,7 +97,7 @@ angular.module('myApp')
                         link: "#/serranosjunin/principal/amolestados",
                     }, {
                         titulo: "Resultados",
-                        link: "#/serranosjunin/principal/horarios",
+                        link: "#/serranosjunin/principal/resultados",
                     }]
             },
             cronicas: {
