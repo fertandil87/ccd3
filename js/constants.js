@@ -8,7 +8,9 @@ angular.module('myApp')
         serranostandil_cronicas_talleres: "https://docs.google.com/document/d/1joQp3VuY9JU8ZZpSFoDJBGk64TG6Pn6mSIdGTnVp6S4/pub?embedded=true",
         serranostandil_cronicas_boca: "https://docs.google.com/document/d/1AUOurFOMpgyWlsYshnCoflM_4AeB1kUAzssDNLAC6ek/pub?embedded=true",
         serranostandil_cronicas_independiente: "https://docs.google.com/document/d/1pJuoPUzN4ZYLwH2qP5Lrbkc_-ys5WAa59-10eGe3IeM/pub?embedded=true",
-        serranostandil_cronicas_rivadavia: "https://docs.google.com/document/d/12SkwgXUtcVde3U8p4NFf5WQRwDQWkh9z8iPhjjWquwo/pub?embedded=true",
+        serranostandil_cronicas_juve1: "https://docs.google.com/document/d/1QJb9IS3jxQJW5UWeFxdBy2unbj_9esM2xsuE2-jmqGI/pub?embedded=true",
+        serranostandil_cronicas_juve2: "https://docs.google.com/document/d/1-f7DSi6lvQu_hfSx0nKaafpytYC-QrW_v4PNpe89x7k/pub?embedded=true",
+        serranostandil_cronicas_juve3: "https://docs.google.com/document/d/16LG_wHETvBMJhA6dirsmv2Jx1H8iSbtss1lrLujsqQg/pub?embedded=true",
         serranastandil_principal_horarios: "https://docs.google.com/document/d/1Uanq9dSKooFBT3oZWr8mNzl3yAYbfZ7rqwQfEPCYlt8/pub?embedded=true",
         serranastandil_principal_posiciones: "https://docs.google.com/document/d/16-3hAjy2m56foDZwpJyruGuXneBrs0JdpqEzNzydhMs/pub?embedded=true",
         serranastandil_principal_amolestados: "https://docs.google.com/document/d/1YJ4kRegk5K6U8wEhSywmDA947Kpw2zZ-XS_0tOgW44c/pub?embedded=true",
@@ -18,7 +20,13 @@ angular.module('myApp')
         serranosjunin_principal_posiciones: "https://docs.google.com/document/d/1g3P26f5zTFRAYTdXlKjVy60cAAxn0gqb41hcykN42yY/pub?embedded=true",
         serranosjunin_principal_amolestados: "https://docs.google.com/document/d/1ypFkLDoy5eQBxKYxzHIpGBm7cg_2gqQtNUJ2Q1hzq6M/pub?embedded=true",
         serranosjunin_principal_resultados: "https://docs.google.com/document/d/1_goXoKPsEBGi2tPf9chgmnHcHOTdJpOlm_LWsNwnKCw/pub?embedded=true",
-        serranosjunin_cronicas_todas: "https://docs.google.com/document/d/1UnHv6DvounSRV1tKpOPSFVKbUP3evkGUwivalAMg-FI/pub?embedded=true"
+        serranosjunin_cronicas_todas: "https://docs.google.com/document/d/1UnHv6DvounSRV1tKpOPSFVKbUP3evkGUwivalAMg-FI/pub?embedded=true",
+        
+        serranosayacucho_principal_horarios: "https://docs.google.com/document/d/1L0x_obgz-psba5c2OjfkiOwu75K62gTKLLpBTsDI2Kg/pub?embedded=true",
+        serranosayacucho_principal_posiciones: "https://docs.google.com/document/d/1MFmD2B2AtE1gIkLiG6YeuR7yI6OvN-E0E5rkmi2i4f0/pub?embedded=true",
+        serranosayacucho_principal_amolestados: "https://docs.google.com/document/d/1Wf2D-IuhJPTCgd84hFGVDqlwd4WtrK-637Nw1PiesR0/pub?embedded=true",
+        serranosayacucho_principal_resultados: "https://docs.google.com/document/d/1oGZ23hwo5rXsvUMg9i0XXH4FAo5XkNziDXOJJAPbia8/pub?embedded=true",
+        serranosayacucho_cronicas_todas: "https://docs.google.com/document/d/1ZLyjCuNJ5bDkwgb5W328fUoAK9oYAaXXGB-tXos6Yzw/pub?embedded=true"
     })
     .constant('MENU', {
         serranostandil: {
@@ -44,14 +52,20 @@ angular.module('myApp')
                         titulo: "Nahuel",
                         link: "#/serranostandil/cronicas/nahuel",
                     }, {
+                        titulo: "La Juve Stadium - Cancha 1",
+                        link: "#/serranostandil/cronicas/juve1",
+                    }, {
+                        titulo: "La Juve Stadium - Cancha 2",
+                        link: "#/serranostandil/cronicas/juve2",
+                    }, {
+                        titulo: "La Juve Stadium - Cancha 3",
+                        link: "#/serranostandil/cronicas/juve3",
+                    }, {
                         titulo: "Independiente",
                         link: "#/serranostandil/cronicas/independiente",
                     }, {
                         titulo: "Boca",
                         link: "#/serranostandil/cronicas/boca",
-                    }, {
-                        titulo: "Rivadavia",
-                        link: "#/serranostandil/cronicas/rivadavia",
                     }, {
                         titulo: "Talleres",
                         link: "#/serranostandil/cronicas/talleres",
@@ -105,6 +119,31 @@ angular.module('myApp')
                 secciones: [{
                         titulo: "Todas las Conicas",
                         link: "#/serranosjunin/cronicas/todas",
+                    }]
+            }
+        },
+        serranosayacucho: {
+            principal: {
+                titulo: "Datos Principales",
+                secciones: [{
+                        titulo: "Horarios",
+                        link: "#/serranosayacucho/principal/horarios",
+                    }, {
+                        titulo: "Posiciones",
+                        link: "#/serranosayacucho/principal/posiciones",
+                    }, {
+                        titulo: "Amarillas y Suspendidos",
+                        link: "#/serranosayacucho/principal/amolestados",
+                    }, {
+                        titulo: "Resultados",
+                        link: "#/serranosayacucho/principal/resultados",
+                    }]
+            },
+            cronicas: {
+                titulo: "Cronicas",
+                secciones: [{
+                        titulo: "Todas las Conicas",
+                        link: "#/serranosayacucho/cronicas/todas",
                     }]
             }
         }
