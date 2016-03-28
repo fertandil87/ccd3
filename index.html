@@ -39,33 +39,47 @@
                 <aside class="left-off-canvas-menu">
                     <ul class="off-canvas-list">
                         <li><label>Competencia</label></li>
-                        <li ng-class="{active: lugar === 'serranostandil'}"><a href="#/serranostandil/principal/horarios">Copa de Serranos Tandil</a></li>
-                        <li ng-class="{active: lugar === 'serranastandil'}"><a href="#/serranastandil/principal/horarios">Copa de Serranas Tandil</a></li>
-                        <li ng-class="{active: lugar === 'serranosjunin'}"><a href="#/serranosjunin/principal/horarios">Copa de Serranos Junín</a></li>
-                        <li ng-class="{active: lugar === 'serranosayacucho'}"><a href="#/serranosayacucho/principal/horarios">Copa de Serranos Ayacucho</a></li>
+                        <li ng-class="{active: lugar === 'serranostandil'}">
+                            <a href="#/serranostandil/principal/horarios">Copa de Serranos Tandil</a>
+                        </li>
+                        <li ng-class="{active: lugar === 'serranastandil'}">
+                            <a href="#/serranastandil/principal/horarios">Copa de Serranas Tandil</a>
+                        </li>
+                        <li ng-class="{active: lugar === 'serranosmdq'}">
+                            <a href="#/serranosmdq/principal/horarios">Copa de Serranos Mdq</a>
+                        </li>
+                        <li ng-class="{active: lugar === 'serranosjunin'}">
+                            <a href="#/serranosjunin/principal/horarios">Copa de Serranos Junín</a>
+                        </li>
+                        <li ng-class="{active: lugar === 'serranosayacucho'}">
+                            <a href="#/serranosayacucho/principal/horarios">Copa de Serranos Ayacucho</a>
+                        </li>
                     </ul>
                 </aside>
                 <aside class="right-off-canvas-menu">
                     <ul class="off-canvas-list">
                         <li>
-                            <label>{{ selectedMenu.principal.titulo }}</label>
+                            <label>{{ selectedMenu.principal.titulo}}</label>
                         </li>
                         <li ng-repeat="item in selectedMenu.principal.secciones">
-                            <a href="{{ item.link }}">{{ item.titulo }}</a>
+                            <a href="{{ item.link}}">{{ item.titulo}}</a>
                         </li>
                         <li>
-                            <label>{{ selectedMenu.cronicas.titulo }}</label>
+                            <label>{{ selectedMenu.cronicas.titulo}}</label>
                         </li>
                         <li ng-repeat="item in selectedMenu.cronicas.secciones">
-                            <a href="{{ item.link }}">{{ item.titulo }}</a>
+                            <a href="{{ item.link}}">{{ item.titulo}}</a>
                         </li>
-                        
+
                     </ul>
                 </aside>
                 <section class="main-section">
+                    <div class="banner">
+                        <script type="text/javascript" src="http://ad.leadbolt.net/show_app_ad.js?section_id=216274349"></script>
+                    </div>
                     
                     <div ng-style="{'height':iframeHeight}" ng-view></div>
-                    
+
                     <div class="refresh">
                         <a ng-click="reloadRoute()">Si no cargo todo el contenido...<br/>Toca aqui para recargar.</a>
                     </div>
@@ -73,7 +87,7 @@
                 <a class="exit-off-canvas"></a>
             </div>
         </div>
-               
+
         <script src="js/libs/angular.js"></script>
         <script src="js/libs/angularrouter.js"></script>
         <script src="js/libs/jquery.js"></script>

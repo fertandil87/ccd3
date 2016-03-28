@@ -21,12 +21,17 @@ angular.module('myApp')
         serranosjunin_principal_amolestados: "https://docs.google.com/document/d/1ypFkLDoy5eQBxKYxzHIpGBm7cg_2gqQtNUJ2Q1hzq6M/pub?embedded=true",
         serranosjunin_principal_resultados: "https://docs.google.com/document/d/1_goXoKPsEBGi2tPf9chgmnHcHOTdJpOlm_LWsNwnKCw/pub?embedded=true",
         serranosjunin_cronicas_todas: "https://docs.google.com/document/d/1UnHv6DvounSRV1tKpOPSFVKbUP3evkGUwivalAMg-FI/pub?embedded=true",
-        
         serranosayacucho_principal_horarios: "https://docs.google.com/document/d/1L0x_obgz-psba5c2OjfkiOwu75K62gTKLLpBTsDI2Kg/pub?embedded=true",
         serranosayacucho_principal_posiciones: "https://docs.google.com/document/d/1MFmD2B2AtE1gIkLiG6YeuR7yI6OvN-E0E5rkmi2i4f0/pub?embedded=true",
         serranosayacucho_principal_amolestados: "https://docs.google.com/document/d/1Wf2D-IuhJPTCgd84hFGVDqlwd4WtrK-637Nw1PiesR0/pub?embedded=true",
         serranosayacucho_principal_resultados: "https://docs.google.com/document/d/1oGZ23hwo5rXsvUMg9i0XXH4FAo5XkNziDXOJJAPbia8/pub?embedded=true",
-        serranosayacucho_cronicas_todas: "https://docs.google.com/document/d/1ZLyjCuNJ5bDkwgb5W328fUoAK9oYAaXXGB-tXos6Yzw/pub?embedded=true"
+        serranosayacucho_cronicas_todas: "https://docs.google.com/document/d/1ZLyjCuNJ5bDkwgb5W328fUoAK9oYAaXXGB-tXos6Yzw/pub?embedded=true",
+        
+        serranosmdq_principal_horarios: "https://docs.google.com/document/d/1ts4rFMaCsaP68aQiitPWXTwK9mqkJBreDGRIPfUzCK4/pub?embedded=true",
+        serranosmdq_principal_posiciones: "https://docs.google.com/document/d/1-cVNkYhGFfPo0oIjr0eaYmGSujmv_Fs0AvD8H0-h0H0/pub?embedded=true",
+        serranosmdq_principal_amolestados: "https://docs.google.com/document/d/1lek1Zf2_JntLu-hWtRo5OAeyTiEcgDItoX-p_7p4guY/pub?embedded=true",
+        serranosmdq_principal_resultados: "https://docs.google.com/document/d/1zHPMA69rsucY7knt-zuzdcudUXvins80EH1--NoyiXU/pub?embedded=true",
+        serranosmdq_cronicas_todas: "https://docs.google.com/document/d/1YEcDmHF2cEKm2UnJtoz7ss1esvePlPxjNcYiwb0OR9c/pub?embedded=true"
     })
     .constant('MENU', {
         serranostandil: {
@@ -86,7 +91,7 @@ angular.module('myApp')
                         link: "#/serranastandil/principal/amolestados",
                     }, {
                         titulo: "Resultados",
-                        link: "#/serranastandil/principal/horarios",
+                        link: "#/serranastandil/principal/resultados",
                     }]
             },
             cronicas: {
@@ -144,6 +149,31 @@ angular.module('myApp')
                 secciones: [{
                         titulo: "Todas las Conicas",
                         link: "#/serranosayacucho/cronicas/todas",
+                    }]
+            }
+        },
+        serranosmdq: {
+            principal: {
+                titulo: "Datos Principales",
+                secciones: [{
+                        titulo: "Horarios",
+                        link: "#/serranosmdq/principal/horarios"
+                    }, {
+                        titulo: "Posiciones",
+                        link: "#/serranosmdq/principal/posiciones"
+                    }, {
+                        titulo: "Amarillas y Suspendidos",
+                        link: "#/serranosmdq/principal/amolestados"
+                    }, {
+                        titulo: "Resultados",
+                        link: "#/serranosmdq/principal/resultados"
+                    }]
+            },
+            cronicas: {
+                titulo: "Cronicas",
+                secciones: [{
+                        titulo: "Todas las Conicas",
+                        link: "#/serranosmdq/cronicas/todas"
                     }]
             }
         }

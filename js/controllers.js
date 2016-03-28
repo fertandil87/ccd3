@@ -4,11 +4,11 @@
 
 angular.module('myApp.controllers', [])
     .controller('MainCtrl', ['$scope', '$routeParams', 'MENU', '$route',
-        function($scope, $routeParams, MENU, $route) {
+        function ($scope, $routeParams, MENU, $route) {
             $scope.navHeight = 45;
             $scope.bannerTop = 0;
             $scope.bannerBottom = 43;
-            $scope.getSizes = function() {
+            $scope.getSizes = function () {
                 var myWidth = 0, myHeight = 0;
                 if (typeof (window.innerWidth) === 'number') {
                     //Non-IE
@@ -28,37 +28,37 @@ angular.module('myApp.controllers', [])
             };
             $scope.getSizes();
             var clearHeight = $scope.height - $scope.navHeight - $scope.bannerTop - $scope.bannerBottom;
-            $scope.iframeHeight = clearHeight+'px';
-            
+            $scope.iframeHeight = clearHeight + 'px';
+
             var container = angular.element(document.querySelector('#iframeContainer'));
-            container.css('height',$scope.iframeHeight + 'px');
-            
+            container.css('height', $scope.iframeHeight + 'px');
+
             $scope.menu = MENU;
             $scope.selectedMenu = $scope.menu['serranostandil'];
             $scope.$on('$routeChangeSuccess', function (event, current, previous) {
                 $scope.lugar = $routeParams.lugar;
                 $scope.selectedMenu = $scope.menu[$scope.lugar];
-                 // current is the current route
-                 // previous is the previous route
-             });
-             
-            $scope.reloadRoute = function() {
+                // current is the current route
+                // previous is the previous route
+            });
+
+            $scope.reloadRoute = function () {
                 $route.reload();
             };
         }
     ])
     .controller('DocumentosCtrl', ['$scope', '$routeParams', '$sce', 'DOCUMENTOS',
-        function($scope, $routeParams, $sce, DOCUMENTOS) {
+        function ($scope, $routeParams, $sce, DOCUMENTOS) {
             $scope.lugar = $routeParams.lugar;
             $scope.tipo = $routeParams.tipo;
             $scope.documento = $routeParams.documento;
-            $scope.trustSrc = function(src) {
+            $scope.trustSrc = function (src) {
                 return $sce.trustAsResourceUrl(src);
             };
-            
+
             $scope.documentos = DOCUMENTOS;
-            
-            var docId = $scope.lugar+'_'+$scope.tipo+'_'+$scope.documento;
+
+            var docId = $scope.lugar + '_' + $scope.tipo + '_' + $scope.documento;
             $scope.googledoclink = $scope.documentos[docId];
             $scope.random = Math.random();
         }
